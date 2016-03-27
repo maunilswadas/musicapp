@@ -14,10 +14,10 @@ $( document ).ready(function() {
 
         var $this = $(this),
             audio = $this.siblings('audio')[0],
-            bpm = Number($this.siblings('audio').data('bpm'));
+            bpm = Number($('.track').attr('data-bpm'));
 
         pulse = (60/bpm)*1000;
-        console.log(pulse);
+        console.log(bpm);
 
 
         if (audio.paused === false) {

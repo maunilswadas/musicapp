@@ -88,7 +88,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-    background: url(../img/cover-image.jpg) no-repeat center center;
+    background: url(../img/cover-image.svg) no-repeat center center;
     background-size: 155%;
 }
 .spinner-wrap {
@@ -104,8 +104,6 @@ body{
     cursor: pointer;
 }
 .spinner-wrap.pulse {
-    -webkit-animation: pulse 0.5s linear 1;
-    -moz-animation: pulse 0.5s linear 1;
     animation: pulse 0.5s linear 1;
 }
 
@@ -146,6 +144,18 @@ body{
     to {
         transform: rotate(0deg);
     }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
 }
 
 
