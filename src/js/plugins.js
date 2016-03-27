@@ -22,3 +22,6 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+$('.track').click(function(){
+    change_track($(this).attr('data-location'));// function to change the track of the loaded audio player without page refresh preferred...
+});

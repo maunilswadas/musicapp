@@ -12,20 +12,26 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/jquery-2.2.2.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+
     </head>
     <body>
-    <audio id="player" controls="controls">
-        <source id="ogg_src" src="lib/audio/barger01.ogg" type="audio/ogg" />
-        <source id="mp3_src" src="lib/audio/barger01.mp3" type="audio/mp3" />
+    <div class="spinner-wrap">
+        <div class="spinner-outer"></div>
+
+        <!--<div class="play-sprite"></div>-->
+        <div class="spinner-center"></div>
+    </div>
+    <audio id="player" data-bpm="86">
+        <source id="mp3-src" src="tracks/Krewella-Alive.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
     </audio>
 
     <div id="audio_list">
-        <a href="#" class="track" data-location="">sample</a>
-        <a href="#" class="track" data-location="http://www.newoggtrack.ogg">sample</a>
+        <a href="#" class="track" data-location="tracks/Afrojack-TenFeetTall.mp3">afro</a>
+        <a href="#" class="track" data-location="tracks/Krewella-Alive.mp3">alive</a>
     </div>
+    <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
 
     </body>
 </html>

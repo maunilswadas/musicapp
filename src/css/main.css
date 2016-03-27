@@ -87,13 +87,66 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+    background: url(../img/cover-image.jpg) no-repeat center center;
+    background-size: 155%;
+}
+.spinner-wrap {
+    display: block;
+    width: 327px;
+    height: 327px;
+    position: relative;
+    left: 50%;
+    margin-left: -163px;
+    top: 19px;
+}
+.spinner-wrap * {
+    cursor: pointer;
+}
+.spinner-wrap.pulse {
+    -webkit-animation: pulse 0.5s linear 1;
+    -moz-animation: pulse 0.5s linear 1;
+    animation: pulse 0.5s linear 1;
+}
 
+.spinner-outer {
+    display: block;
+    width: 327px;
+    height: 327px;
+    position: absolute;
+    left: 50%;
+    margin-left: -163px;
+    border-radius: 50%;
+    background: url(../img/outer-spinner.svg) center center no-repeat;
+}
+.playing .spinner-outer {
 
+    animation: spin-cw 5s linear infinite;
+}
 
+.spinner-center {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin: -99px;
+    background: url(../img/inner-spinner-play.svg) center center no-repeat;
+    pointer-events: none;
+}
+.playing .spinner-center {
+    background: url(../img/inner-spinner-pause.svg) center center no-repeat;
+}
 
-
-
-
+@keyframes spin-cw {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
 
 
 
