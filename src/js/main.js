@@ -23,13 +23,13 @@ $( document ).ready(function() {
         if (audio.paused === false) {
             audio.pause();
             audio.currentTime = 0;
-            $this.removeClass('playing');
+            $this.removeClass('playing').removeClass('pulse');
             clearInterval(intervals);
         }
 
         else {
             audio.play();
-            $this.addClass('playing');
+            $this.addClass('playing').addClass('pulse');
             pulsing();
             intervals = setInterval(function() {pulsing()}, pulse);
 
