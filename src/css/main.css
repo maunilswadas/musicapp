@@ -88,8 +88,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-    background: url(../img/cover-image.svg) no-repeat center center;
-    background-size: 155%;
+    background: url(../img/cover-image.jpg) no-repeat center center;
+    background-size: 230%;
+}
+@media only screen and (max-width: 721px) {
+    body{
+        background-size: 1980px;
+    }
 }
 .spinner-wrap {
     display: block;
@@ -159,7 +164,18 @@ body{
 
 }
 
-
+.playlist{
+    position: absolute;
+    width:100vw;
+    min-height: 20vh;
+    max-height: 30vh;
+    background-color: #00b0ff;
+    bottom: 0;
+    opacity: 0.5;
+}
+.bottom-sheet{
+    max-height: 90% !important;
+}
 
 
 

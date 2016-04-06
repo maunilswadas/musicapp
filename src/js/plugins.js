@@ -25,3 +25,7 @@
 $('.track').click(function(){
     change_track($(this).attr('data-location'));// function to change the track of the loaded audio player without page refresh preferred...
 });
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+});
