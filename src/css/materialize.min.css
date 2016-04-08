@@ -8332,7 +8332,7 @@ a.waves-effect .waves-ripple {
   width: 100%;
   max-height: 45%;
   border-radius: 0;
-  will-change: bottom, opacity
+  /*will-change: bottom, opacity*/
 }
 
 .collapsible {

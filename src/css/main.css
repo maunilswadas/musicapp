@@ -90,6 +90,7 @@ textarea {
 body{
     background: url(../img/cover-image.jpg) no-repeat center center;
     background-size: 230%;
+    overflow: hidden;
 }
 @media only screen and (max-width: 721px) {
     body{
@@ -176,7 +177,6 @@ body{
 .bottom-sheet{
     max-height: 90% !important;
 }
-
 
 
 

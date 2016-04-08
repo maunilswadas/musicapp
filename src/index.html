@@ -14,6 +14,8 @@
         <script src="js/vendor/jquery-2.2.2.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/materialize.min.js"></script>
+        <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+
 
     </head>
     <body>
@@ -32,14 +34,15 @@
 <br>
 <br>
 
-
-    <a class="waves-effect waves-light modal-trigger playlist" href="#modal1">Modal</a>
+    <a class="waves-effect waves-light modal-trigger playlist" href="#modal1"></a>
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal bottom-sheet">
         <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+            <h4>Playlist</h4>
+            <div class="modal-footer">
+                <a href="#" class=" modal-action modal-close waves-effect btn-flat">Close</a>
+            </div>
             <div class="row">
                 <div class="col s6 m2">
                     <div class="card">
@@ -283,13 +286,12 @@
                 </div>
             </div>
         </div>
-        <div class="modal-footer">
-            <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
+
     </div>
 
     <script src="js/main.js"></script>
     <script src="js/plugins.js"></script>
+
 
     </body>
 </html>
