@@ -6,9 +6,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel="import" href="font/material-design-icons/Material-Design-Icons.ttf">
         <link rel="stylesheet" href="css/materialize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/jquery-2.2.2.min.js"></script>
@@ -19,6 +19,24 @@
 
     </head>
     <body>
+    <nav>
+        <div class="nav">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="large mdi-navigation-menu"></i>
+            </a>
+        </div>
+    </nav>
     <div class="spinner-wrap">
         <div class="spinner-outer"></div>
 
