@@ -1,5 +1,8 @@
 function change_track(sourceUrl) {
     var audio = $("#player");
+    if(sourceUrl==""){
+        return 0;
+    }
     $("#mp3-src").attr("src", sourceUrl);
     /****************/
     audio[0].pause();

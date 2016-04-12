@@ -93,9 +93,18 @@ body{
     background-size: 230%;
     overflow: hidden;
 }
+#nav-text{
+    position: absolute;
+    left:50px;
+    font-weight: bolder;
+    font-size: 23px;
+}
 @media only screen and (max-width: 721px) {
     body{
         background-size: 1980px;
+    }
+    #nav-text{
+        font-size: 20px;
     }
 }
 .spinner-wrap {
@@ -121,7 +130,7 @@ body{
     position: absolute;
     left: 50%;
     margin-left: -163px;
-    border-radius: 50%;
+    border-radius: 100%;
     background: url(../img/outer-spinner.svg) center center no-repeat;
 }
 .playing .spinner-outer {
@@ -167,13 +176,13 @@ body{
 }
 
 .playlist{
+    font-family: "Comic Sans MS";
     position: absolute;
     width:100vw;
     min-height: 20vh;
     max-height: 30vh;
-    background-color: #00b0ff;
+    background-color: rgba(0,69,100,0.5);
     bottom: 0;
-    opacity: 0.5;
 }
 .bottom-sheet{
     max-height: 90% !important;

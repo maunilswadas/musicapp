@@ -19,9 +19,10 @@
 
     </head>
     <body>
-    <nav>
+    <nav class="deep-purple lighten-1">
         <div class="nav">
-            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" class="brand-logo"><img src="img/logo.svg" alt="logo"></a>
+            <span id="nav-text">Music App</span>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#">Sign Up</a></li>
                 <li><a href="#">Log In</a></li>
@@ -44,7 +45,7 @@
         <div class="spinner-center"></div>
     </div>
     <audio id="player">
-        <source id="mp3-src" src="tracks/Krewella-Alive.mp3" type="audio/mp3" />
+        <source id="mp3-src" src="" type="audio/mp3" />
         Your browser does not support the audio element.
     </audio>
 <br>
@@ -52,7 +53,7 @@
 <br>
 <br>
 
-    <a class="waves-effect waves-light modal-trigger playlist" href="#modal1"></a>
+    <a class="waves-effect waves-light modal-trigger playlist" href="#modal1"><h3 class="center">Click to play</h3></a>
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal bottom-sheet">
@@ -67,8 +68,8 @@
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/album-art/davidguetta.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Afrojack-TenFeetTall.mp3">afro</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/Afrojack-TenFeetTall.mp3">Ten Feet Tall</a>
                         </div>
                     </div>
                 </div>
@@ -77,228 +78,168 @@
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">Alive</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/Maroon5-Payphone.png">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/payphone.mp3">Payphone</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/WithoutYou-DavidGuetta.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/davidguetta-WithoutYou.mp3">Without you</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/davidguetta.jpg">
+                            <img class="activator" src="img/album-art/chris-brown-dontwakemeup.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Afrojack-TenFeetTall.mp3">afro</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/dontwakemeup.mp3">Don't wake me up</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/Alltherightmoves.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/OneRepublic-all_the_right_moves.mp3">All the right moves</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/BoB-SoGood.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/SoGood-BoB.mp3">So Good</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/davidguetta.jpg">
+                            <img class="activator" src="img/album-art/CalvinHarris-Summer.png">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Afrojack-TenFeetTall.mp3">afro</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/Summer-CalvinHarris.mp3">Summer</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/enrique-iglesias-there-goes.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/ThereGoesMyBaby.mp3">There She Goes</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/falloutboy-ThePhoenix.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/ThePhoenix.mp3">The Phoenix</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/davidguetta.jpg">
+                            <img class="activator" src="img/album-art/LinkinParkLivingthings.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Afrojack-TenFeetTall.mp3">afro</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/linkingparkLivingThings.mp3">Living Things</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/pitbull-getitstarted.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6 m2">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/GetItStarted.mp3">Getting Started</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/Zedd_Stay_the_Night.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/StayTheNight-Zedd.mp3">Stay The Night</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/album-art/KRE_-_Alive_cover.png">
+                            <img class="activator" src="img/album-art/Airplanes-eminem.jpg">
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="track" data-bpm="86" data-location="tracks/Krewella-Alive.mp3">alive</a>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/Airplanes-Eminem.mp3">Airplanes pt.2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m2">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/album-art/BadBlood-Bastille.jpg">
+                        </div>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/BadBlood-Bastille.mp3">Bad Blood</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m2">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/album-art/Eminem-Beautiful.jpg">
+                        </div>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/beautiful-eminem.mp3">Beautiful</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m2">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/album-art/skyfall-adele.jpg">
+                        </div>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/Adele-Skyfall.mp3">Skyfall</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m2">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/album-art/Sara-Bareilles-Brave.png">
+                        </div>
+                        <div class="card-content center">
+                            <a href="#" class="track" data-bpm="86" data-location="tracks/Brave-SaraBareilles.mp3">Brave</a>
                         </div>
                     </div>
                 </div>

@@ -32,11 +32,9 @@ $(document).ready(function(){
 
 $(window).swipe( {
     swipeUp:function(event, direction, distance, duration) {
-        console.log("You swiped " + direction);
         $('.playlist').click();
     },
     swipeRight:function(event, direction, distance, duration) {
-        console.log("You swiped " + direction);
         $('.button-collapse').click();
     },
     threshold:100,
