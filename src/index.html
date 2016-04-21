@@ -24,13 +24,11 @@
             <a href="#" class="brand-logo"><img src="img/logo.svg" alt="logo"></a>
             <span id="nav-text">Music App</span>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log In</a></li>
+                <li><a href="#">Subscribe</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
             <ul id="slide-out" class="side-nav">
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log In</a></li>
+                <li><a href="#">Subscribe</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
             <a href="#" data-activates="slide-out" class="button-collapse">
@@ -38,20 +36,8 @@
             </a>
         </div>
     </nav>
-    <div class="spinner-wrap">
-        <div class="spinner-outer"></div>
-
-        <!--<div class="play-sprite"></div>-->
-        <div class="spinner-center"></div>
-    </div>
-    <audio id="player">
-        <source id="mp3-src" src="" type="audio/mp3" />
-        Your browser does not support the audio element.
-    </audio>
-<br>
-<br>
-<br>
-<br>
+    <iframe id="background-video" src="https://www.youtube.com/embed/6Yr_gDLcX7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <a class="cover-video-link"><div class="cover-video-division"></div></a>
 
     <a class="waves-effect waves-light modal-trigger playlist" href="#modal1"><h3 class="center">Click to play</h3></a>
 
@@ -63,6 +49,14 @@
                 <a href="#" class=" modal-action modal-close waves-effect btn-flat">Close</a>
             </div>
             <div class="row">
+                <div class="spinner-wrap">
+                    <div class="spinner-outer"></div>
+                    <div class="spinner-center"></div>
+                </div>
+                <audio id="player">
+                    <source id="mp3-src" src="https://www.youtube.com/embed/6Yr_gDLcX7Q" type="audio/mp3" />
+                    Your browser does not support the audio element.
+                </audio>
                 <div class="col s6 m2">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -250,7 +244,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/plugins.js"></script>
-
 
     </body>
 </html>

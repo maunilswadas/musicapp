@@ -26,7 +26,6 @@ $('.track').click(function(){
     change_track($(this).attr('data-location'));// function to change the track of the loaded audio player without page refresh preferred...
 });
 $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
 });
 
@@ -41,3 +40,14 @@ $(window).swipe( {
     allowPageScroll:"vertical"
 });
 $(".button-collapse").sideNav();
+$('.cover-video-link').click(function(){
+    var playingflag=false;
+    if(playingflag){
+        playingflag=false;
+        $('#background-video')[0].src += "&autoplay=1";
+    }
+    else{
+        playingflag=true;
+        $('#background-video').pauseVideo();
+    }
+});

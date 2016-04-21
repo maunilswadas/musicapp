@@ -107,6 +107,20 @@ body{
         font-size: 20px;
     }
 }
+#background-video{
+    top: -8vh;
+    position: absolute;
+    height: 110vh;
+    width: 100vw;
+    z-index: -10;
+}
+.cover-video-division{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00b0ff;
+    opacity: 0.8;
+}
 .spinner-wrap {
     display: block;
     width: 327px;
@@ -114,8 +128,10 @@ body{
     position: relative;
     left: 50%;
     margin-left: -163px;
-    top: 19px;
+    z-index: 1000;
+
 }
+
 .spinner-wrap * {
     cursor: pointer;
 }
@@ -146,7 +162,7 @@ body{
     left: 50%;
     top: 50%;
     margin: -99px;
-    background: url(../img/inner-spinner-play.svg) center center no-repeat;
+    //background: url(../img/inner-spinner-play.svg) center center no-repeat;
     pointer-events: none;
 }
 .playing .spinner-center {

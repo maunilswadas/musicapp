@@ -27,12 +27,14 @@ $( document ).ready(function() {
             audio.pause();
             audio.currentTime = 0;
             $this.removeClass('playing').removeClass('pulse');
+
             clearInterval(intervals);
         }
 
         else {
             audio.play();
             $this.addClass('playing').addClass('pulse');
+
             pulsing();
             intervals = setInterval(function() {pulsing()}, pulse);
 
